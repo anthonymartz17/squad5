@@ -21,7 +21,7 @@ function findLargestElement(numbers) {
 /**
  * Checks if a given string is a palindrome.
  *
- * @param {string} inputString - The input string to check.
+ @param {string} inputString - The input string to check.
  * @returns {boolean} - True if the string is a palindrome, false otherwise.
  */
 function isPalindrome(inputString) {
@@ -35,8 +35,18 @@ function isPalindrome(inputString) {
  * @param {*} targetElement - The element to count occurrences of.
  * @returns {number} - The number of occurrences of the target element.
  */
-function countOccurrences(array, targetElement) {
+function countOccurrences(array, targetElement) {// Marcus
   // Implementation is intentionally omitted in this file.
+  let countOcc = 0;
+
+  for (let element of array) {
+    if( element === targetElement) {
+      countOcc ++;
+    }
+  }
+  
+  return countOcc;
+  
 }
 
 /**
